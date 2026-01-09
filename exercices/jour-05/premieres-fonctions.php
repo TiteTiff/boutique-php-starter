@@ -4,15 +4,14 @@ function greed()
     echo "Bienvenue sur la boutique!";
 }
 
-function greedClient()
+function greedClient($name)
 {
-    $name = "Emma";
-    echo "Bienvenue sur la boutique Emma!";
+    echo "Bienvenue sur la boutique $name!";
 }
 
 greed();
-greedClient();
+greedClient("Emma");
 greed();
-greedClient();
+greedClient("Hugo");
 greed();
-greedClient();
+greedClient("Léa");
