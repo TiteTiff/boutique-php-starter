@@ -10,8 +10,8 @@ class Product
 
     public function getPriceIncludingTax(float $vat = 20)
     {
-        $priceTTC = $this->price * (1 + $vat / 100);
-        return $priceTTC;
+        $this->price = $this->price * (1 + $vat / 100);
+        return $this->price;
     }
 
     public function isInStock()
@@ -38,9 +38,6 @@ class Product
 }
 
 $product = new Product(1, "T-shirt", "T-shirt en coton bio", 29.99, 10, "Tops");
-
-
-
 
 ?>
 
