@@ -15,7 +15,7 @@ class Car
     }
     public function display2(): void
     {
-        echo ($this->brand . $this->model . " " . $this->year);
+        echo ($this->brand . $this->model . " " . $this->getAge() . "ans");
     }
 }
 $auto = new Car("Kia ", "Rio ", 2021);
