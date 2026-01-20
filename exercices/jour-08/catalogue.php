@@ -31,8 +31,8 @@ foreach ($catalogue as $product) {
 </head>
 
 <body>
-    <p><?= "Le stock total comporte " . $$stockTotal = $product->stock + $product->stock + $product->stock . " articles." ?></p>
-    <p><?= "La valeur totale du catalogue est de " . $$valeurTotale = $stockTotal * $product->stock . " $." ?></p>
+    <p><?= "Le stock total comporte " . $stockTotal = $product->stock + $product->stock + $product->stock . " articles." ?></p>
+    <p><?= "La valeur totale du catalogue est de " . $valeurTotale = $stockTotal * $product->stock . " $." ?></p>
 </body>
 
 </html>
